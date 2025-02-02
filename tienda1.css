@@ -1,0 +1,342 @@
+:root{
+    --primario: #9C27B0;
+    --oscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundariOscuro: rgb(233,287,2);
+    --blanco: #FFF;
+    --NEGRO: #000;
+
+
+    --fuenteprincipal: "Staatliches", serif;
+       
+      
+      
+}
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+
+  body{
+
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  p{
+
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+  }
+
+  a{
+
+    text-decoration: none;
+  }
+
+  img{
+
+    max-width: 50%;
+  }
+
+  .contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  h1,h2,h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuenteprincipal);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  h1{
+    font-size: 4rem;
+    
+  }
+
+  h2{
+    font-size: 3.2rem;
+  }
+
+  h3{
+    font-size: 24rem;
+  }
+
+  .header{
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__logo{
+    margin: -70px 0 -80px 110px;
+
+  }
+
+  .navegacion__enlace{
+
+    font-family: var(--fuenteprincipal);
+    color: var(--blanco);
+    font-size: 24px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .navegacion__enlace:hover{
+
+    color: var(--secundario);
+  }
+  .navegador{
+    background-color: var(--oscuro);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+
+
+
+  .footer{
+
+    display: flex;
+    justify-content: center;
+    background-color: var(--oscuro);
+
+  }
+
+
+  .footer--parrafo{
+
+    font-size: 10px;
+ 
+    
+  }
+  /** GRID */
+
+.grid{
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 columnas */
+  grid-template-rows: repeat(3, auto);   /* 3 filas */
+
+
+}
+
+
+
+
+  /**producto**/
+
+  .producto{
+  
+    width: 300px; /* Tamaño del producto */
+    height: 300px;
+    background: linear-gradient(#000 , transparent);
+
+    border: 0px solid white;
+    margin: 20px 0 30px 40px;
+
+  }
+
+  .producto--imagen{
+    align-items: center;
+    width: 150%;  /* Ocupa todo el ancho del contenedor */
+    margin: 15px 0 0 75px;
+ }
+
+ .producto--nombre{
+    text-align: center;
+    font-family: var(--fuenteprincipal);
+    font-size: 25px;
+ }
+
+ .producto--precio{
+
+  text-align: center;
+  font-family: var(--fuenteprincipal);
+  color: var(--secundario);
+  font-size: 20px;
+  margin: -20 10px 20px 10px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+ }
+
+ /*fotogrande*/
+
+
+ 
+ .fotogrande-programacion{
+  min-height: 30rem;
+  background-image: url("lenguajesuwu.jpg");
+  grid-row: 3/ 4;
+  grid-column: 2 / 4;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  margin-bottom: 40px;
+
+ }
+
+ .opaco{
+
+
+  background-color: #000;
+ }
+
+
+
+
+
+
+
+
+
+
+ /* nosotros */
+
+
+ .nosotros{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 20px;
+ }
+
+ .nosotros--contenido{
+  font-family: var(--fuenteprincipal);
+ }
+ .nosotros--imagen{
+
+  height: 450px;
+  width: 450px;
+  object-fit: cover;
+ max-width: none;
+ }
+
+
+ .comprar {
+  margin-top: 70px;
+
+
+ }
+
+ .bloques{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 70px;
+  row-gap: 90px;
+
+ }
+
+ .bloque{
+  text-align: center;
+ }
+
+ .bloque__imagen{
+
+  width: 100px;
+  height: 100px;
+ }
+
+ .bloque__info{
+
+  font-size: 25px;
+  border: none;
+  -webkit-text-stroke-width: 0.5px;
+ }
+
+
+
+ /**producto**/
+
+ .productoproducto{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+  margin-left: -150px;
+  width: 1500px;
+  height: 570px;
+}
+
+.producto__imagen{
+margin-right: -100px;
+margin-bottom: 200px;
+border-radius: 20px;
+}
+
+.producto__info{
+  margin-right: 300px;
+
+
+}
+.formulario{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+  border: none;
+}
+
+
+.cantidad{
+
+  background-color: var(--primario);
+  border-width: 3px;
+  border-style:solid;
+  border-color: var(--oscuro);
+  color: #FFF;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.talla{
+  background-color: var(--primario);
+  border-width: 3px;
+  border-style:solid;
+  border-color: var(--oscuro);
+  color: #FFF;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+
+.carrito{
+
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  background-color: var(--secundario);
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: var(--fuenteprincipal);
+  transition: background-color .3s ease-in-out;
+  transition: font-size 0.3s ;
+}
+
+
+.carrito:hover{
+
+  background-color: var(--secundariOscuro);
+  font-size: 25px;
+}
